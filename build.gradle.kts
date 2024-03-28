@@ -13,6 +13,16 @@ plugins {
      */
     id("com.github.johnrengelman.shadow") version "8.1.1"
     id("org.danilopianini.gradle-java-qa") version "1.41.0"
+    id("org.sonarqube") version "4.4.1.3373"
+}
+
+sonarqube {
+    properties {
+        property("sonar.projectKey", "sonarqube-sample-gradle-code-master")
+        property("sonar.host.url", "http://localhost:9001")
+        property("sonar.login", "squ_73d2503c96b7d19c0fa1306aef02d6209145136d")
+        property("sonar.gradle.skipCompile", "true")
+    }
 }
 
 repositories { // Where to search for dependencies
