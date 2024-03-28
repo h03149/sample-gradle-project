@@ -20,7 +20,7 @@ sonarqube {
     properties {
         property("sonar.projectKey", "Testtoolchain")
         property("sonar.projectName", "Testtoolchain")
-        property("sonar.host.url", "http://localhost:9001")
+        property("sonar.host.url", "http://192.168.35.209:9001")
         property("sonar.login", "squ_73d2503c96b7d19c0fa1306aef02d6209145136d")
         property("sonar.gradle.skipCompile", "true")
     }
